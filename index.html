@@ -17,11 +17,26 @@
             text-align: center;
             padding: 20px;
         }
+        /* Center-align the navigation links in the header */
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        /* Style for the navigation links */
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        /* Style for the navigation links on hover */
+        header nav a:hover {
+            background-color: #555;
+        }
         nav {
             display: flex;
-            justify-content: center; /* Center-align navigation links horizontally */
+            justify-content: center;
             background-color: #444;
-            text-align: center; /* Center-align navigation links vertically */
         }
         nav a {
             color: #fff;
@@ -46,6 +61,7 @@
             padding: 20px;
             background-color: #eee;
         }
+        /* Create separate service boxes */
         .service {
             margin: 20px 0;
             padding: 20px;
@@ -78,13 +94,13 @@
     <header>
         <h1>John Gartland</h1>
         <p>Web Developer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <div class="container" id="about">
         <h2>About Me</h2>
         <p>Hello, I'm John Gartland, a passionate freelance web developer with a love for crafting clean and functional websites. With a background in web development and coding, I've honed my skills in front-end and back-end development, making me adept at creating responsive and user-friendly web solutions. I thrive on challenges and am dedicated to delivering high-quality work that exceeds my clients' expectations. Whether it's building a sleek and modern website, optimizing performance, or solving complex technical issues, I'm committed to turning your vision into reality. Let's collaborate and bring your web project to life. Your success is my mission.</p>
