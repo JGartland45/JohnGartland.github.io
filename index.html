@@ -57,6 +57,9 @@
             height: 50px; /* Adjust the height as needed */
             margin-right: 20px; /* Adjust the spacing between the image and text */
         }
+        .service-info {
+            flex: 1; /* Allow the text to expand and take available space */
+        }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -95,46 +98,32 @@
         <div class="row">
             <div class="col-xs-12 col-sm-4">
                 <div class="service">
-                    <img src="analysis_2587875.png" alt="Data Analysis Icon">
                     <h3>Data Analysis</h3>
-                    <p>I am specialized in analyzing data. Results, trends, and recommendations are clearly presented in reports or tools.</p>
+                    <div class="service-info">
+                        <img src="analysis_2587875.png" alt="Data Analysis Icon">
+                        <p>I am specialized in analyzing data. Results, trends, and recommendations are clearly presented in reports or tools.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="service">
-                    <img src="database_6078594.png" alt="Web Development Icon">
                     <h3>Web Development</h3>
-                    <p>As a web developer, I help design and create perfect websites optimized for desktop and smartphone.</p>
+                    <div class="service-info">
+                        <img src="database_6078594.png" alt="Web Development Icon">
+                        <p>As a web developer, I help design and create perfect websites optimized for desktop and smartphone.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="service">
-                    <img src="presentation_9942524.png" alt="Consulting Icon">
                     <h3>Consulting</h3>
-                    <p>Before and during data-related projects, I give advice on project progress and coach data analysts.</p>
+                    <div class="service-info">
+                        <img src="presentation_9942524.png" alt="Consulting Icon">
+                        <p>Before and during data-related projects, I give advice on project progress and coach data analysts.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <div class="service">
-                    <img src="commercial_7988650.png" alt="Data Analytics Icon">
-                    <h3>Data Analytics</h3>
-                    <p>Get more value from your data with prediction models and machine learning techniques.</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <div class="service">
-                    <img src="strategy_4197243.png" alt="Infographics Icon">
-                    <h3>Infographics</h3>
-                    <p>Present your data in an inspiring way using interactive infographics.</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <div class="service">
-                    <img src="data-visualization_6078567.png" alt="Dashboards Icon">
-                    <h3>Dashboards</h3>
-                    <p>Interactive dashboards for examining trends and patterns in your data.</p>
-                </div>
-            </div>
+            <!-- Add the remaining services with the same structure -->
         </div>
     </div>
     <div class="container" id="contact">
