@@ -60,6 +60,18 @@
             margin: 20px 0;
             padding: 20px;
             background-color: #eee;
+            position: relative; /* Add position relative */
+        }
+        /* Add this style for the sliding description */
+        .portfolio-item .description {
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            transition: bottom 0.3s ease;
+            text-align: center;
         }
         /* Create separate service boxes */
         .service {
@@ -111,8 +123,10 @@
             <h3><a href="https://jgartland45.github.io/Data-Dive/index.html">Project 1</a></h3>
             <!-- Make the iframe square and smaller -->
             <iframe src="https://jgartland45.github.io/Data-Dive/index.html" width="300" height="200" frameborder="0"></iframe>
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background-color: white; padding: 20px;">
-                <p>This is Data Dive For Investigators, I've built this platform to make data analytics accessible to everyone, empowering better decision-making and insights for all.</p>
+            <!-- Add the description div -->
+            <div class="description">
+                <h3>DDFI</h3>
+                <p>Data analytics accessible to everyone, empowering better decision-making and insights for all.</p>
             </div>
         </div>
         <div class="portfolio-item">
@@ -188,5 +202,22 @@
         <p>Email: yourname@example.com</p>
         <p>Phone: (123) 456-7890</p>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+            portfolioItems.forEach(function (item) {
+                item.addEventListener("mouseover", function () {
+                    const description = item.querySelector(".description");
+                    description.style.bottom = "0";
+                });
+
+                item.addEventListener("mouseout", function () {
+                    const description = item.querySelector(".description");
+                    description.style.bottom = "-50%";
+                });
+            });
+        });
+    </script>
 </body>
 </html>
